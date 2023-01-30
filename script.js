@@ -14,8 +14,9 @@ let btnHold = document.querySelector(".btn--hold");
 score0El.innerText = 0;
 score1El.innerText = 0;
 diceEl.classList.add("hidden")
+const score =[0,0];
 let currentScore = 0;
-
+let activePlayer = 0;
 //dice functionality
 btnRoll.addEventListener("click",function(){
     //random number for dices
@@ -29,9 +30,11 @@ btnRoll.addEventListener("click",function(){
     //when dice is not one
     if(dice !== 1){
       currentScore += dice;
-      current0El.textContent = currentScore;
+      document.getElementById(`current--${activePlayer}`).textContent =currentScore;
     }else{
      //next player..
-     
+     document.getElementById(`current--${activePlayer}`).textContent = 0;
+     currentScore = 0;
+    activePlayer = activePlayer === 0 ?1 :0;
     }
 });
