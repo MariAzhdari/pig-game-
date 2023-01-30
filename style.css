@@ -16,7 +16,7 @@ body {
     font-weight: 400;
     height: 100vh;
     color: #333;
-    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    background-image: linear-gradient(to top left, #928195 0%, #884749 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +59,7 @@ main {
 .score {
     font-size: 8rem;
     font-weight: 300;
-    color: #c7365f;
+    color: #a77f8a;
     margin-bottom: auto;
 }
 
@@ -80,7 +80,7 @@ main {
 }
 
 .current {
-    background-color: #c7365f;
+    background-color: #867aa8;
     opacity: 0.8;
     border-radius: 9px;
     color: #fff;
@@ -106,7 +106,7 @@ main {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    color: #444;
+    color: rgb(58, 58, 58);
     background: none;
     border: none;
     font-family: inherit;
@@ -117,7 +117,7 @@ main {
     transition: all 0.2s;
 
     background-color: white;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(243, 240, 240, 0.6);
     backdrop-filter: blur(10px);
 
     padding: 0.7rem 2.5rem;
@@ -167,5 +167,5 @@ main {
 
 .player--winner .name {
     font-weight: 700;
-    color: #c7365f;
+    color: #a77281;
 }
