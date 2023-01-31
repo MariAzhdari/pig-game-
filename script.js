@@ -1,7 +1,7 @@
 'use strict';
 //selections elements
-const player0El = document.querySelector(".player--0");
-const player1El = document.querySelector(".player--1");
+let player0El = document.querySelector(".player--0");
+let player1El = document.querySelector(".player--1");
 let score0El = document.getElementById("score--0");
 let score1El = document.getElementById("score--1");
 let current0El = document.getElementById("current--0");
@@ -64,3 +64,15 @@ document.querySelector(`.player--${activePlayer}`).classList.add('player--winner
     switchPlayer();
 } 
 }})
+
+btnNew.addEventListener('click',function(){
+  score0El.textContent = 0;
+  score1El .textContent = 0;
+  current0El .textContent = 0;
+  current1El .textContent = 0;
+  player0El.classList.remove('player--winner');
+  player0El.classList.remove('player--winner');
+  player0El.classList.add('player--active');
+  player0El.classList.remove('player--active');
+
+})
