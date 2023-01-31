@@ -16,7 +16,7 @@ body {
     font-weight: 400;
     height: 100vh;
     color: #333;
-    background-image: linear-gradient(to top left, #02171c 0%, #b9e4e4 100%);
+    background-image: linear-gradient(to top left, #010e12 0%, #d1e9e9 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@ main {
 }
 
 .player--active {
-    background-color: rgba(1, 5, 13, 0.4);
+    background-color: rgba(54, 237, 21, 0.4);
 }
 
 .player--active .name {
