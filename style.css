@@ -16,7 +16,7 @@ body {
     font-weight: 400;
     height: 100vh;
     color: #333;
-    background-image: linear-gradient(to top left, #0b3734 0%, #c8eae8 100%);
+    background-image: linear-gradient(to top left, #02171c 0%, #b9e4e4 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +27,6 @@ main {
     position: relative;
     width: 100rem;
     height: 60rem;
-    background-color: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(200px);
     filter: blur();
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
@@ -59,12 +58,12 @@ main {
 .score {
     font-size: 8rem;
     font-weight: 300;
-    color: #bb7edb;
+    color: #c7365f;
     margin-bottom: auto;
 }
 
 .player--active {
-    background-color: rgba(2, 2, 95, 0.4);
+    background-color: rgba(1, 5, 13, 0.4);
 }
 
 .player--active .name {
@@ -80,10 +79,10 @@ main {
 }
 
 .current {
-    background-color: #beb7ce;
+    background-color: #c7365f;
     opacity: 0.8;
     border-radius: 9px;
-    color: rgb(49, 15, 45);
+    color: #fff;
     width: 65%;
     padding: 2rem;
     text-align: center;
@@ -94,7 +93,7 @@ main {
     text-transform: uppercase;
     margin-bottom: 1rem;
     font-size: 1.7rem;
-    color: rgb(30, 10, 30);
+    color: #ddd;
 }
 
 .current-score {
@@ -106,7 +105,7 @@ main {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    color: rgb(58, 58, 58);
+    color: #444;
     background: none;
     border: none;
     font-family: inherit;
@@ -117,7 +116,7 @@ main {
     transition: all 0.2s;
 
     background-color: white;
-    background-color: rgba(172, 163, 163, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
 
     padding: 0.7rem 2.5rem;
@@ -162,14 +161,16 @@ main {
 }
 
 .player--winner {
-    background-color: #26984c;
+    /* background-color: #022b0f; */
+    background-image:url('giphy.webp');
+    background-size: cover;
 }
 
 .player--winner .name {
     font-weight: 700;
-    color: #c7627f;
+    color: #3f4f2f;
 }
 
 .hidden {
-display:none;
+    display: none;
 }
