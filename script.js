@@ -1,5 +1,7 @@
 'use strict';
 //selections elements
+const player0El = document.querySelector(".player--0");
+const player1El = document.querySelector(".player--1");
 let score0El = document.getElementById("score--0");
 let score1El = document.getElementById("score--1");
 let current0El = document.getElementById("current--0");
@@ -53,8 +55,9 @@ score[activePlayer] += currentScore ;
 // score[1] = score[1] + currentScore;
 document.getElementById(`score--${activePlayer}`).textContent =score[activePlayer];
 // if player score >= 100
-if(score[activePlayer] >= 30){
+if(score[activePlayer] >= 60){
  playing = false;
+  diceEl.classList.add("hidden")
 document.querySelector(`.player--${activePlayer}`).classList.add('player--winner')
 }else{
     //switch to next player

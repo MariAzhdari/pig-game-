@@ -16,7 +16,7 @@ body {
     font-weight: 400;
     height: 100vh;
     color: #333;
-    background-image: linear-gradient(to top left, #928195 0%, #884749 100%);
+    background-image: linear-gradient(to top left, #391340 0%, #dbc0c0 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,12 +59,12 @@ main {
 .score {
     font-size: 8rem;
     font-weight: 300;
-    color: #9f5ec2;
+    color: #bb7edb;
     margin-bottom: auto;
 }
 
 .player--active {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(9, 0, 7, 0.4);
 }
 
 .player--active .name {
@@ -80,10 +80,10 @@ main {
 }
 
 .current {
-    background-color: #867aa8;
+    background-color: #59516c;
     opacity: 0.8;
     border-radius: 9px;
-    color: rgb(189, 65, 65);
+    color: rgb(49, 15, 45);
     width: 65%;
     padding: 2rem;
     text-align: center;
@@ -94,7 +94,7 @@ main {
     text-transform: uppercase;
     margin-bottom: 1rem;
     font-size: 1.7rem;
-    color: #ddd;
+    color: rgb(30, 10, 30);
 }
 
 .current-score {
