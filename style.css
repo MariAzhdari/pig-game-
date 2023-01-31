@@ -83,7 +83,7 @@ main {
     background-color: #867aa8;
     opacity: 0.8;
     border-radius: 9px;
-    color: #fff;
+    color: rgb(189, 65, 65);
     width: 65%;
     padding: 2rem;
     text-align: center;
@@ -117,7 +117,7 @@ main {
     transition: all 0.2s;
 
     background-color: white;
-    background-color: rgba(243, 240, 240, 0.6);
+    background-color: rgba(172, 163, 163, 0.6);
     backdrop-filter: blur(10px);
 
     padding: 0.7rem 2.5rem;
