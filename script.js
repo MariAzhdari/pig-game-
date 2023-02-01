@@ -61,7 +61,6 @@ btnRoll.addEventListener("click",function(){
     switchPlayer()
 }}});
 
-
 // hold btn
 btnHold.addEventListener("click",function(){
   if(playing){
