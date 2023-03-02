@@ -63,7 +63,7 @@ main {
 }
 
 .player--active {
-    background-color: rgba(55, 232, 24, 0.4);
+    background-color: rgba(59, 232, 24, 0.4);
 }
 
 .player--active .name {
