@@ -11,6 +11,12 @@ html {
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
@@ -26,67 +32,36 @@ body {
 main {
     position: relative;
     width: 100%;
-    max-width: 120rem;
-    height: 60rem;
+    height: 100%;
     backdrop-filter: blur(200px);
     filter: blur();
     box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
     border-radius: 9px;
     overflow: hidden;
     display: flex;
-}
-
-@media only screen and (max-width: 1199px) {
-  main {
-    height: 70rem;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  main {
-    height: 80rem;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  main {
-    height: auto;
-    box-shadow: none;
-    border-radius: 0;
-    overflow: visible;
-  }
-  
-  .player {
     flex-direction: column;
-    padding: 6rem 2rem;
-  }
-  
-  .player:nth-child(2) {
-    margin-top: 3rem;
-  }
-  
-  .player--active {
-    background-color: rgba(59, 232, 24, 0.4);
-  }
-  
-  .current {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .btn {
-    width: 100%;
-    margin-top: 2rem;
-  }
+}
+
+@media only screen and (min-width: 600px) {
+    main {
+        width: 100rem;
+        height: 60rem;
+        flex-direction: row;
+    }
 }
 
 .player {
-    flex: 50%;
-    padding: 9rem;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: all 0.75s;
+}
+
+@media only screen and (min-width: 600px) {
+    .player {
+        padding: 9rem;
+    }
 }
 
 /* ELEMENTS */
@@ -100,10 +75,10 @@ main {
     margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 767px) {
-  .name {
-    font-size: 3rem;
-  }
+@media only screen and (max-width: 600px) {
+    .name {
+        font-size: 3rem;
+    }
 }
 
 .score {
@@ -113,10 +88,14 @@ main {
     margin-bottom: auto;
 }
 
-@media only screen and (max-width: 767px) {
-  .score {
-    font-size: 5rem;
-  }
+@media only screen and (max-width: 600px) {
+    .score {
+        font-size: 6rem;
+    }
+}
+
+.player--active {
+    background-color: rgba(59, 232, 24, 0.4);
 }
 
 .player--active .name {
@@ -125,6 +104,10 @@ main {
 
 .player--active .score {
     font-weight: 400;
+}
+
+.player--active .current {
+    opacity: 1;
 }
 
 .current {
@@ -141,5 +124,23 @@ main {
 .current-label {
     text-transform: uppercase;
     margin-bottom: 1rem;
-    font-size: 1.7rem
+    font-size: 1.7rem;
+    color: #ddd;
+}
+
+.current-score {
+    font-size: 3.5rem;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #444;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.8rem;
+    text-transform: uppercase;
 }
